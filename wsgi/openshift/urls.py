@@ -10,4 +10,6 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^accounts/', include('registration.backends.default.urls')),
+    url(r'^dashboard/', 'views.dashboard', name='profile'),
+    url('', include('social.apps.django_app.urls', namespace='social')),
 )

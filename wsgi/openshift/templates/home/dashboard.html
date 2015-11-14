@@ -1,0 +1,9 @@
+{% if user and not user.is_anonymous and user.get_full_name %}
+  <a>Hello, {{ user.get_full_name }}!</a>
+  <br>
+  <a href="/accounts/logout">Logout</a>
+{% else %}
+Welcome {{ username }}
+  <br>
+  <a href="/accounts/logout">Logout</a>
+{% endif %}
