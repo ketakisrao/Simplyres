@@ -13,11 +13,27 @@
     {% include 'Modules/navbar.html' %}
 </div>
   <div class="container" >
-    <ul>
-    {% for item in bookings %}
-    <li>{{ item.time }} </li>
-{% endfor %}
-</ul>
+    <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Restaurant Name</th>
+        <th>Location</th>
+        <th>Date</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in bookings %}
+      <tr>
+        <td>{{item.restaurant.name}}</td>
+        <td>{{item.restaurant.location}}</td>
+        <td>{{item.date}}</td>
+        <td>{{ item.time }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 
 </body>

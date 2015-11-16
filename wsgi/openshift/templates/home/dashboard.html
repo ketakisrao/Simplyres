@@ -56,8 +56,8 @@
   </div>
   <div class="container"  style="height:80%; width:90%;">
     <div class="alert alert-warning" style="display:none;" id="mywarn">
-    Place selected is not a restaurant!
-  </div>
+      Place selected is not a restaurant!
+    </div>
     <input id="pac-input" class="controls" type="text"
     placeholder="Enter a location">
     <div id="map"></div>
@@ -103,10 +103,10 @@ function validate_form()
   for(i=0;i<placetypes.length;i++)
   {
     if(placetypes[i]=="restaurant")
-      {
-        is_res = true;
-        break;
-        }
+    {
+      is_res = true;
+      break;
+    }
   }
   if(!is_res)
   {
