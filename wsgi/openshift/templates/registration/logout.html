@@ -4,5 +4,8 @@
 {% block title %}{% trans "Logged out" %}{% endblock %}
 
 {% block content %}
-<p>{% trans "Successfully logged out" %}.</p>
+<p>Successfully logged out, redirecting to website...</p>
+<script>
+setTimeout(function(){window.location.href="../../"}, 2000)
+</script>
 {% endblock %}

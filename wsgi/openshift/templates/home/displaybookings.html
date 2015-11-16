@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlaceID finder</title>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta charset="utf-8">
+  {% include 'Modules/css.html' %}
+  {% include 'Modules/js.html' %}
+  
+</head>
+<body>
+  <div class="container" >
+    {% include 'Modules/navbar.html' %}
+</div>
+  <div class="container" >
+    <ul>
+    {% for item in bookings %}
+    <li>{{ item.time }} </li>
+{% endfor %}
+</ul>
+</div>
+
+</body>
+</html>
+
+<!-- AIzaSyBuCmbMEyBhm1J7CgKiJBKMK8SjKNyfJjg -->

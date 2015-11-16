@@ -13,16 +13,16 @@
 </head>
 
 <body>
-	{% include 'Modules/navbar.html' %}
 	<!-- Begin page content -->
 
 	<div class="container">
-	{% block content %}
+	{% include 'Modules/navbar.html' %}
 
+	<!-- Main component for a primary marketing message or call to action -->
 
+    {% block content %}
 	{% endblock %}
 	</div>
-	{% include 'Modules/footer.html' %}
 	<script>
 	$('#hint_id_username').hide()
 	</script>

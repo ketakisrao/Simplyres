@@ -12,4 +12,6 @@ urlpatterns = patterns('',
     url(r'^accounts/', include('registration.backends.default.urls')),
     url(r'^dashboard/', 'views.dashboard', name='profile'),
     url('', include('social.apps.django_app.urls', namespace='social')),
+    url(r'^api-auth/', include('rest_framework.urls', namespace="rest_fraemwork")),
+    url(r'^resservices/', include('resservices.urls')),
 )

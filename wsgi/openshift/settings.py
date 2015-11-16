@@ -56,6 +56,8 @@ INSTALLED_APPS = (
     'registration',
     'crispy_forms',
     'social.apps.django_app.default',
+    'resservices',
+    'rest_framework'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -160,3 +162,11 @@ AUTHENTICATION_BACKENDS = (
     'social.backends.twitter.TwitterOAuth',
     'django.contrib.auth.backends.ModelBackend',
 )
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
+REST_SESSION_LOGIN = True
+TIME_ZONE =  'Asia/Kolkata'
