@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,51 +7,12 @@
   <meta charset="utf-8">
   {% include 'Modules/css.html' %}
   {% include 'Modules/js.html' %}
-  <style>
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  #map {
-    height: 80%;
-    width: 100%;
-  }
-  .controls {
-    background-color: #fff;
-    border-radius: 2px;
-    border: 1px solid transparent;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    box-sizing: border-box;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 300;
-    height: 29px;
-    margin-left: 17px;
-    margin-top: 10px;
-    outline: none;
-    padding: 0 11px 0 13px;
-    text-overflow: ellipsis;
-    width: 400px;
-  }
-
-  .controls:focus {
-    border-color: #4d90fe;
-  }
-  .right {
-    position: absolute;
-    right: 15%;
-    /*width: 100px;*/
-    padding: 10px;
-    margin-top: 3%;
-  }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/map.css' %}" />
   
 </head>
 <body>
   <div class="container" >
-    {% include 'Modules/navbar.html' %}
+    {% include 'Modules/navbarlogged.html' %}
     
     <!-- Main component for a primary marketing message or call to action -->
   </div>
@@ -181,5 +143,3 @@ function initMap() {
 async defer></script>
 </body>
 </html>
-
-<!-- AIzaSyBuCmbMEyBhm1J7CgKiJBKMK8SjKNyfJjg -->
