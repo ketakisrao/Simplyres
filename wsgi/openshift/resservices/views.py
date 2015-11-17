@@ -27,6 +27,7 @@ class RestaurantDetail(generics.RetrieveUpdateDestroyAPIView):
 	queryset = Restaurant.objects.all()
 	serializer_class = RestaurantSerializer
 
+#For Bookings
 
 class BookingList(generics.ListCreateAPIView):
 	queryset = Booking.objects.all()
