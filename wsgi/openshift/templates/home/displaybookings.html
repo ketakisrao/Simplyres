@@ -11,32 +11,36 @@
 <body>
   <div class="container" >
     {% include 'Modules/navbarlogged.html' %}
-</div>
+  </div>
   <div class="container" >
+
+    {% if bookings %}
     <div class="table-responsive">          
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Restaurant Name</th>
-        <th>Location</th>
-        <th>Date</th>
-        <th>Time</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for item in bookings %}
-      <tr>
-        <td>{{item.restaurant.name}}</td>
-        <td>{{item.restaurant.location}}</td>
-        <td>{{item.date}}</td>
-        <td>{{ item.time }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-</div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Restaurant Name</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in bookings %}
+          <tr>
+            <td>{{item.restaurant.name}}</td>
+            <td>{{item.restaurant.location}}</td>
+            <td>{{item.date}}</td>
+            <td>{{ item.time }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
 
-</body>
-</html>
-
-<!-- AIzaSyBuCmbMEyBhm1J7CgKiJBKMK8SjKNyfJjg -->
+    {% else %}
+    <p>You do not have any bookings, <strong>Make your first one now by clicking on dashboard!</strong><p>
+      {% endif %}
+    </div>
+  </body>
+  </html>
