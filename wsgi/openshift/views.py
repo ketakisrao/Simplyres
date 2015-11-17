@@ -32,3 +32,11 @@ def dashboard(request):
 			b.save()
 			b_arr = Booking.objects.filter(username=username)
 			return render(request, 'home/displaybookings.html', {'bookings': b_arr})
+
+
+@login_required
+def bookings(request):
+	if request.user.is_authenticated():
+		username = request.user.username
+		b_arr = Booking.objects.filter(username=username)
+	return render(request, 'home/displaybookings.html', {'bookings': b_arr})	

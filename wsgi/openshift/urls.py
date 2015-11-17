@@ -14,4 +14,6 @@ urlpatterns = patterns('',
     url('', include('social.apps.django_app.urls', namespace='social')),
     url(r'^api-auth/', include('rest_framework.urls', namespace="rest_fraemwork")),
     url(r'^resservices/', include('resservices.urls')),
+    url(r'^bookings/', 'views.bookings', name='book'),
+
 )
