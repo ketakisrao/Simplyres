@@ -17,4 +17,17 @@ If you want a copy of this application up and running on your local machines, do
 + Simplyres! should now be running on http://localhost:8080/
 
 
-##### If you wish to access features like Login with Facebook or Twitter please use the Openshift site as the features will not work on your local machines.
+##### If you wish to access features like Login with Facebook or Twitter please use the Openshift site as the features will not work on your local machines. Please use a HTML5 compatible browser for the application since it contains a few elements from HTML5.
+
+
+After Installation
+==================
+
+
++ Visit the homepage and click on GetStarted
++ Login/Register/Login with Facebook or Twitter to be able to see your dashboard and make bookings.
++ Search for a restaurant on the google maps input provided. (Maps has been integrated for user convenience and interactivity)
++ Choose number of people (cannot be greater than 16).
++ Choose a date and timing for the booking.
++ Hit Book! to confirm the booking
++ Navigate to the bookings tab to be able to view your bookings.
