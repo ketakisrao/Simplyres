@@ -1,5 +1,5 @@
-Simply Res
-==========
+Simply Res!
+===========
 SimplyRes allows you to make reservations at restaurants, SimplyReserve!
 
 
@@ -17,7 +17,4 @@ If you want a copy of this application up and running on your local machines, do
 + Simplyres! should now be running on http://localhost:8080/
 
 
-#### If you wish to access features like Login with Facebook or Twitter please use the Openshift site as the features will not work on your local machines.
-
-
-####SimplyRes!
+##### If you wish to access features like Login with Facebook or Twitter please use the Openshift site as the features will not work on your local machines.
