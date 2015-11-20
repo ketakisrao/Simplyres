@@ -31,3 +31,17 @@ After Installation
 + Choose a date and timing for the booking.
 + Hit Book! to confirm the booking
 + Navigate to the bookings tab to be able to view your bookings.
+
+
+REST API
+========
+
+SimplyRes has REST API for the following
++ To view the Restaurants registered.
++ To view the bookings made by people.
+
+To View Restaurants, navigate to domain_name/resservices/api/
+To View Restaurant details by primary key, navigate to domain_name/resservices/api/[pk]
+
+To View Bookings, navigate to domain_name/resservices/api/bookings
+To View Bookings detail by primary key, navigate to domain_name/resservices/api/bookings/[pk]
