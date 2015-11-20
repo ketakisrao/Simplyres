@@ -41,7 +41,9 @@ SimplyRes has REST API for the following
 + To view the bookings made by people.
 
 To View Restaurants, navigate to domain_name/resservices/api/
+
 To View Restaurant details by primary key, navigate to domain_name/resservices/api/[pk]
 
 To View Bookings, navigate to domain_name/resservices/api/bookings
+
 To View Bookings detail by primary key, navigate to domain_name/resservices/api/bookings/[pk]
